@@ -1,1 +1,1 @@
-# newsletter-september
+# newsletter-august
