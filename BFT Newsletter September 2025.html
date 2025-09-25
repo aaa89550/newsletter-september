@@ -173,44 +173,10 @@
                 width: 100% !important;
                 margin-bottom: 40px;
             }
-            .img-pair-row {
-                flex-direction: column;
-                gap: 0;
-            }
-            .img-pair-group {
-                width: 100% !important;
-                gap: 10px;
-                margin-bottom: 30px;
-            }
-            /* 手機版圖片樣式 */
-            .img-pair-group img {
-                width: 100%;
-                height: 200px !important;
-                object-fit: contain;
-                border: solid 0.1px #000;
-                margin: 0 auto;
-                display: block;
-            }
+
         }
 
-        .img-pair-row {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-        .img-pair-group {
-            display: flex;
-            flex-direction: column;
-            width: 48%;
-            gap: 20px;
-        }
-        /* 桌面版圖片樣式 */
-        .img-pair-group img {
-            width: 100%;
-            height: 350px;
-            object-fit: contain;
-            border: solid 0.1px #000;
-        }
+
     </style>
 
 </head>
@@ -408,16 +374,38 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="img-pair-row">
-                                    <div class="img-pair-group">
-                                        <img src="images/03A-1.jpg" alt="Detail 1">
-                                        <img src="images/03A-2.jpg" alt="Detail 2">
-                                    </div>
-                                    <div class="img-pair-group">
-                                        <img src="images/03B-1.jpg" alt="Detail 3">
-                                        <img src="images/03B-2.jpg" alt="Detail 4">
-                                    </div>
-                                </div>
+                                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                                    <tr>
+                                        <td style="width: 48%; vertical-align: top; padding-right: 15px;">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                                                <tr>
+                                                    <td style="padding-bottom: 20px;">
+                                                        <img src="images/03A-1.jpg" alt="Detail 1" style="width: 100%; height: auto; border: solid 0.1px #000; display: block;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/03A-2.jpg" alt="Detail 2" style="width: 100%; height: auto; border: solid 0.1px #000; display: block;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="width: 48%; vertical-align: top; padding-left: 15px;">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                                                <tr>
+                                                    <td style="padding-bottom: 20px;">
+                                                        <img src="images/03B-1.jpg" alt="Detail 3" style="width: 100%; height: auto; border: solid 0.1px #000; display: block;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/03B-2.jpg" alt="Detail 4" style="width: 100%; height: auto; border: solid 0.1px #000; display: block;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                         <tr>
